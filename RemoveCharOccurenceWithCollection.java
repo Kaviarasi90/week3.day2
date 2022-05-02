@@ -11,12 +11,15 @@ public class RemoveCharOccurenceWithCollection {
 	String sentence = "we learn java basics as part of java sessions in java WEEK1";
 	String[] name= {"jk","dd","jk"};
 	
-	List<String> aslist=Arrays.asList(name);
-	Set<String> set=new HashSet<String>(aslist);
+	Set<String> set=new HashSet<String>();
+	for(String b:name) {
+		set.add(b);
+	}
 	System.out.println(set);
 	
 	List<String> aslist1=Arrays.asList(sentence);
-	Set<String> set1=new HashSet<String>(aslist1);
-	System.out.println(set1);
+	for(String d:aslist1) {
+		aslist1.add(d);
 	
-}}
+	System.out.println(d);
+}}}
